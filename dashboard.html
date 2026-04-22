@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SSG.com Insight Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/your-font-awesome-kit.js" crossorigin="anonymous"></script>
+</head>
+<body class="navy-theme">
+    <div class="stars"></div>
+    <div class="twinkling"></div>
+    
+    <nav class="sidebar">
+        <div class="logo">
+            <span class="gold-text">SSG</span> INSIGHT
+        </div>
+        <ul class="nav-links">
+            <li class="active" data-section="overview"><i class="fas fa-th-large"></i> Overview</li>
+            <li data-section="visualizations"><i class="fas fa-chart-line"></i> Analytics</li>
+            <li data-section="insights"><i class="fas fa-lightbulb"></i> Strategy</li>
+            <li data-section="data-table"><i class="fas fa-table"></i> Data Hub</li>
+        </ul>
+        <div class="sidebar-footer">
+            <p>v1.0.0 | 2026 Analysis</p>
+        </div>
+    </nav>
+
+    <main class="content">
+        <!-- Section: Overview -->
+        <section id="overview" class="active">
+            <div class="hero">
+                <h1>SSG.com 특가 마켓 데이터 <span class="gold-text">인텔리전스</span></h1>
+                <p>20년 경력 데이터 전문가의 정밀 분석 결과를 실시간 대시보드로 확인하세요.</p>
+            </div>
+            
+            <div class="kpi-grid">
+                <div class="kpi-card glass">
+                    <div class="kpi-icon"><i class="fas fa-shopping-bag"></i></div>
+                    <div class="kpi-info">
+                        <h3>전체 상품 수</h3>
+                        <div class="value">380 <small>건</small></div>
+                    </div>
+                </div>
+                <div class="kpi-card glass">
+                    <div class="kpi-icon"><i class="fas fa-coins"></i></div>
+                    <div class="kpi-info">
+                        <h3>평균 판매가</h3>
+                        <div class="value">84,334 <small>원</small></div>
+                    </div>
+                </div>
+                <div class="kpi-card glass">
+                    <div class="kpi-icon"><i class="fas fa-percentage"></i></div>
+                    <div class="kpi-info">
+                        <h3>최대 할인율</h3>
+                        <div class="value">68.6 <small>%</small></div>
+                    </div>
+                </div>
+                <div class="kpi-card glass">
+                    <div class="kpi-icon"><i class="fas fa-fire"></i></div>
+                    <div class="kpi-info">
+                        <h3>최대 주문량</h3>
+                        <div class="value">266,602 <small>건</small></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="summary-section">
+                <div class="summary-card glass">
+                    <h2><span class="gold-text">#</span> 핵심 분석 요약</h2>
+                    <p>본 데이터셋은 중저가 중심의 대중적 접근과 소수 상품의 폭발적 구매 집중이라는 전형적인 특가 시장의 특성을 투영합니다. 판매 가격의 중앙값이 34,760원이라는 사실은 고객의 심리적 결제 장벽을 정확히 관통하고 있음을 의미합니다.</p>
+                    <div class="tags">
+                        <span>#가성비</span> <span>#중저가집중</span> <span>#파레토법칙</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section: Visualizations -->
+        <section id="visualizations">
+            <div class="section-header">
+                <h2>전략적 <span class="gold-text">분석 차트</span></h2>
+                <p>데이터 시각화를 통해 도출된 핵심 패턴입니다.</p>
+            </div>
+            <div class="chart-grid">
+                <!-- Charts will be injected here via JS or hardcoded for sample -->
+                <div class="chart-card glass">
+                    <div class="chart-img-container">
+                        <img src="images/01_brand_freq.png" alt="브랜드 빈도">
+                    </div>
+                    <div class="chart-details">
+                        <h3>브랜드별 상품 분포</h3>
+                        <p>상위 30개 브랜드에 대한 상품 빈도를 분석한 결과, 특정 스타 브랜드에 대한 의존도가 낮고 브랜드 미지정 상품이 활발히 소비됩니다.</p>
+                    </div>
+                </div>
+                <div class="chart-card glass">
+                    <div class="chart-img-container">
+                        <img src="images/02_site_dist.png" alt="사이트 분포">
+                    </div>
+                    <div class="chart-details">
+                        <h3>사이트별 상품 비중</h3>
+                        <p>통합 플랫폼인 SSG.COM 채널이 전체의 60% 이상을 점유하며 핵심적인 허브 역할을 수행하고 있습니다.</p>
+                    </div>
+                </div>
+                <div class="chart-card glass">
+                    <div class="chart-img-container">
+                        <img src="images/04_price_hist.png" alt="가격 분포">
+                    </div>
+                    <div class="chart-details">
+                        <h3>판매 가격대 분포</h3>
+                        <p>0~5만원 사이의 가격대에 상품이 극도로 편향되어 가격 저항선이 매우 낮음을 시사합니다.</p>
+                    </div>
+                </div>
+                <div class="chart-card glass">
+                    <div class="chart-img-container">
+                        <img src="images/05_price_boxplot_site.png" alt="가격 박스플롯">
+                    </div>
+                    <div class="chart-details">
+                        <h3>사이트별 가격 편차</h3>
+                        <p>신세계백화점과 신세계몰 채널의 가격 편차가 가장 크게 나타나며 프리미엄과 실속형이 공존합니다.</p>
+                    </div>
+                </div>
+                <div class="chart-card glass">
+                    <div class="chart-img-container">
+                        <img src="images/07_price_qty_scatter.png" alt="가격 대비 주문량">
+                    </div>
+                    <div class="chart-details">
+                        <h3>가격-주문량 상관계수</h3>
+                        <p>저가 상품군에서 압도적으로 높은 주문 수량이 발생하는 전형적인 반비례 경향을 보입니다.</p>
+                    </div>
+                </div>
+                <div class="chart-card glass">
+                    <div class="chart-img-container">
+                        <img src="images/10_tfidf_keywords.png" alt="TF-IDF 키워드">
+                    </div>
+                    <div class="chart-details">
+                        <h3>주요 검색 키워드 가중치</h3>
+                        <p>'특가', '단독', '한정' 등의 키워드가 높은 가중치를 받으며 심리적 구매 동기를 부여합니다.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="view-more-container">
+                <button class="btn-gold" onclick="window.location.href='report/ssg_analysis_report.md'">상세 리포트 보기</button>
+            </div>
+        </section>
+
+        <!-- Section: Insights -->
+        <section id="insights">
+            <div class="section-header">
+                <h2>비즈니스 <span class="gold-text">전략 제언</span></h2>
+                <p>데이터 기반의 미래 성장 전략입니다.</p>
+            </div>
+            <div class="insight-container">
+                <div class="insight-item glass">
+                    <div class="num">01</div>
+                    <div class="text">
+                        <h3>가격 포지셔닝 고도화</h3>
+                        <p>5만원~10만원 사이의 '프리미엄 특가(Affordable Luxury)' 라인업을 강화하여 평균 객단가(ATVP)를 현재보다 15% 이상 상향시키는 노력이 필요합니다.</p>
+                    </div>
+                </div>
+                <div class="insight-item glass">
+                    <div class="num">02</div>
+                    <div class="text">
+                        <h3>PB 및 단독 상품 육성</h3>
+                        <p>브랜드 이름값보다 가성비와 독점적 구성을 선호하는 고객 특성을 반영하여 SSG 전용 화이트 라벨 상품의 비중을 확대해야 합니다.</p>
+                    </div>
+                </div>
+                <div class="insight-item glass">
+                    <div class="num">03</div>
+                    <div class="text">
+                        <h3>페이지 노출 리듬감 형성</h3>
+                        <p>스크롤 행태를 분석하여 페이지 후반부에 파격적 할인율의 상품을 배치하는 등 '지루하지 않은' 전시 전략을 도입해야 합니다.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section: Data Table -->
+        <section id="data-table">
+            <div class="section-header">
+                <h2>데이터 <span class="gold-text">인벤토리</span></h2>
+                <div class="search-bar">
+                    <input type="text" id="searchInput" placeholder="상품명 또는 브랜드 검색...">
+                </div>
+            </div>
+            <div class="table-container glass">
+                <table id="productTable">
+                    <thead>
+                        <tr>
+                            <th>상품명</th>
+                            <th>브랜드</th>
+                            <th>가격</th>
+                            <th>주문량</th>
+                            <th>사이트</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tableBody">
+                        <!-- Data will be loaded here -->
+                    </tbody>
+                </table>
+            </div>
+            <div class="pagination">
+                <button id="prevBtn">이전</button>
+                <span id="pageInfo">Page 1 of 10</span>
+                <button id="nextBtn">다음</button>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
